@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="btn_weight">132dp</dimen>
+    <dimen name="btn_height">36dp</dimen>
+    <dimen name="btn_height2">42dp</dimen>
+    <dimen name="btn_p_l">30dp</dimen>
+    <dimen name="btn_p_r">30dp</dimen>
+
+    <dimen name="main_ver_big_title_size">20sp</dimen>
+    <dimen name="main_big_title_size">18sp</dimen>
+    <dimen name="main_title_size">16sp</dimen>
+    <dimen name="main_text_size">14sp</dimen>
+    <dimen name="main_lit3_text_size">13sp</dimen>
+    <dimen name="main_lit_text_size">12sp</dimen>
+    <dimen name="main_lit_2_text_size">11sp</dimen>
+    <dimen name="main_small_text_size">10sp</dimen>
+    <dimen name="main_ver_small_text_size">8sp</dimen>
+
+    <dimen name="tab_height">56dp</dimen>
+</resources>

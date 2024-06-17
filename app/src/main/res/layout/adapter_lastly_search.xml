@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:paddingLeft="24dp"
+        android:paddingRight="24dp">
+        <ImageView
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/search_ic_clock"
+            android:id="@+id/img"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:textSize="@dimen/main_lit_text_size"
+            android:textColor="@color/main_black"
+            android:id="@+id/title"
+            android:layout_toRightOf="@+id/img"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="16dp"/>
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/cancel"
+            android:id="@+id/remove"/>
+    </RelativeLayout>
+</layout>

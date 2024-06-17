@@ -1,0 +1,12 @@
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:drawable="@drawable/bg35_white"
+        android:state_pressed="false"
+        android:state_selected="true"/>
+
+    <item android:drawable="@drawable/bg35_white"
+        android:state_checked="true"
+        android:state_pressed="false"/>
+
+    <item android:drawable="@drawable/bg35_gray2"/>
+</selector>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/bg_gray"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            app:layout_constraintTop_toTopOf="parent"
+            android:id="@+id/topView">
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:padding="10dp"
+                android:src="@drawable/btn_back_default"
+                android:layout_centerVertical="true"
+                android:id="@+id/back"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/search"
+                android:textSize="@dimen/main_big_title_size"
+                android:textColor="@color/main_black"
+                android:layout_centerInParent="true"
+                android:id="@+id/title"/>
+        </RelativeLayout>
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_constraintTop_toBottomOf="@+id/topView"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:background="@color/white"
+            android:paddingLeft="31dp"
+            android:paddingRight="31dp"
+            android:paddingTop="16dp"
+            android:paddingBottom="16dp"
+            android:id="@+id/list"/>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:orientation="vertical"
+            android:id="@+id/bottomDialog"
+            android:elevation="3dp">
+
+        </RelativeLayout>
+
+
+<!--        <com.company.shougo.widget.TravelBtnWidget-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            app:layout_constraintBottom_toBottomOf="parent"-->
+<!--            app:layout_constraintRight_toRightOf="parent"-->
+<!--            android:layout_marginRight="16dp"-->
+<!--            android:layout_marginBottom="8dp"-->
+<!--            android:elevation="2dp"-->
+<!--            android:id="@+id/travelBtn"/>-->
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

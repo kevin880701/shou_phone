@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg10_white"
+        android:id="@+id/view">
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/btn_cancel"
+            android:layout_alignParentRight="true"
+            android:id="@+id/close"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/close"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/black"
+            android:textSize="@dimen/main_title_size"
+            android:textStyle="bold"
+            android:id="@+id/title"/>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/title"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="16dp"
+            android:id="@+id/evaView">
+            <ImageView
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/home_ic_score_1"
+                android:id="@+id/scoreImg"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:text="3.8"
+                android:layout_centerVertical="true"
+                android:textSize="@dimen/main_text_size"
+                android:textColor="@color/black"
+                android:id="@+id/score"
+                android:layout_toRightOf="@+id/scoreImg"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:text=" | "
+                android:layout_centerVertical="true"
+                android:textSize="@dimen/main_text_size"
+                android:textColor="@color/black"
+                android:id="@+id/line"
+                android:layout_toRightOf="@+id/score"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:text=""
+                android:layout_centerVertical="true"
+                android:textSize="@dimen/main_text_size"
+                android:textColor="@color/black"
+                android:id="@+id/allEva"
+                android:layout_toRightOf="@+id/line"/>
+        </RelativeLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/evaView"
+            android:id="@+id/list"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="26dp">
+        </androidx.recyclerview.widget.RecyclerView>
+
+    </RelativeLayout>
+</layout>

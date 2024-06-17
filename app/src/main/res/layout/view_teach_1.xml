@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/black">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitCenter"
+            android:id="@+id/img"/>
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="172dp"
+            android:layout_height="32dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/bg35_white"
+            android:layout_marginBottom="40dp"
+            android:text="@string/know_next"
+            android:textSize="@dimen/main_title_size"
+            android:textColor="@color/black"
+            android:id="@+id/next"/>
+    </RelativeLayout>
+</layout>

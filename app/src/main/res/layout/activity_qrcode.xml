@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/black">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            app:layout_constraintTop_toTopOf="parent"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:id="@+id/topView">
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/btn_back_pressed"
+                android:layout_centerVertical="true"
+                android:padding="5dp"
+                android:id="@+id/back"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/scan_qr_code"
+                android:textSize="@dimen/main_big_title_size"
+                android:textColor="@color/white"
+                android:id="@+id/title"
+                android:layout_centerInParent="true"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            app:layout_constraintTop_toBottomOf="@+id/topView"
+            app:layout_constraintBottom_toTopOf="@+id/img"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:background="@drawable/bg35_gray2"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:id="@+id/success"
+                android:visibility="gone">
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/btn_ic_succeed"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/scan_success"
+                    android:textSize="@dimen/main_lit_text_size"
+                    android:textColor="@color/white"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:background="@drawable/bg35_red"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:id="@+id/fail"
+                android:visibility="gone">
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/btn_ic_failed"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/scan_fail"
+                    android:textSize="@dimen/main_lit_text_size"
+                    android:textColor="@color/white"/>
+            </LinearLayout>
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_centerHorizontal="true"
+            app:layout_constraintDimensionRatio="1:1"
+            app:layout_constraintTop_toBottomOf="@+id/topView"
+            android:layout_marginTop="64dp"
+            android:layout_marginLeft="44dp"
+            android:layout_marginRight="44dp"
+            android:elevation="1dp"
+            android:id="@+id/img"
+            android:src="@drawable/qrcode_frame">
+        </ImageView>
+
+        <com.journeyapps.barcodescanner.DecoratedBarcodeView
+            android:id="@+id/scanner"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_centerHorizontal="true"
+            app:layout_constraintDimensionRatio="1:1"
+            app:layout_constraintTop_toBottomOf="@+id/topView"
+            android:layout_marginTop="64dp"
+            android:layout_marginLeft="44dp"
+            android:layout_marginRight="44dp">
+
+        </com.journeyapps.barcodescanner.DecoratedBarcodeView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/scan_all"
+            android:textSize="@dimen/main_text_size"
+            android:textColor="@color/white"
+            android:id="@+id/content"
+            app:layout_constraintTop_toBottomOf="@+id/scanner"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_marginTop="32dp"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

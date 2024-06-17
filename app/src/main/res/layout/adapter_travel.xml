@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:layout_marginLeft="26dp"
+                android:text=""
+                android:id="@+id/title"
+                android:singleLine="true"
+                android:textColor="@color/main_black"
+                android:textSize="@dimen/main_title_size"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text=""
+                android:textSize="@dimen/main_lit_text_size"
+                android:textColor="@color/hint_gray"
+                android:id="@+id/date"
+                android:layout_marginLeft="5dp"/>
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:padding="5dp"
+                android:src="@drawable/sheet_btn_edit_default"
+                android:id="@+id/edit"/>
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:padding="5dp"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/sheet_btn_delete_default"
+                android:id="@+id/delete"/>
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/line_gray"
+            android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+
+</layout>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+    </data>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="-10dp">
+
+        <androidx.appcompat.widget.AppCompatCheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/check"
+            android:button="@drawable/checkbox"
+            android:clickable="false"
+            android:scaleX="0.5"
+            android:scaleY="0.5" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/other"
+            android:textColor="@color/black"
+            android:singleLine="true"
+            android:textSize="@dimen/main_text_size"
+            android:id="@+id/name"
+            android:layout_marginLeft="-14dp"/>
+    </LinearLayout>
+</layout>
